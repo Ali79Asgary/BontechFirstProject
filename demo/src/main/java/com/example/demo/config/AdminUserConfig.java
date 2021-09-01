@@ -13,20 +13,14 @@ import java.util.List;
 @Configuration
 public class AdminUserConfig {
 
-    @Bean
-    CommandLineRunner commandLineRunner(AdminUserRepository adminUserRepository, SimpleUserRepository simpleUserRepository) {
-        return args -> {
+//    @Bean
+//    CommandLineRunner commandLineRunner(AdminUserRepository adminUserRepository, SimpleUserRepository simpleUserRepository) {
+//        return args -> {
 //            AdminUser firstAdmin = new AdminUser("first", "first");
 //            AdminUser secondAdmin = new AdminUser("second", "second");
 //            adminUserRepository.saveAll(
 //                    List.of(firstAdmin, secondAdmin)
 //            );
-//
-//            SimpleUser firstUser = new SimpleUser("first", "first", "1");
-//            SimpleUser secondUser = new SimpleUser("second", "second", "2");
-//            simpleUserRepository.saveAll(
-//                    List.of(firstUser, secondUser)
-//            );
-        };
-    }
+//        };
+//    }
 }

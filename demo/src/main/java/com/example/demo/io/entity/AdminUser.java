@@ -7,15 +7,6 @@ public class AdminUser {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-//    @SequenceGenerator(
-//            name = "admin_user_sequence",
-//            sequenceName = "admin_user_sequence",
-//            allocationSize = 1
-//    )
-//    @GeneratedValue(
-//            strategy = GenerationType.SEQUENCE,
-//            generator = "admin_user_sequence"
-//    )
     private Long id;
     private String username;
     private String password;
