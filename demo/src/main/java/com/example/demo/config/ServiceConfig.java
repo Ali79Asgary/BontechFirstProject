@@ -11,14 +11,14 @@ import java.util.List;
 @Configuration
 public class ServiceConfig {
 
-    @Bean
-    CommandLineRunner commandLineRunner(ServiceRepository serviceRepository) {
-        return args -> {
-            Service firstService = new Service("first", 10, 20);
-            Service secondService = new Service("second", 20, 40);
-            serviceRepository.saveAll(
-                    List.of(firstService, secondService)
-            );
-        };
-    }
+//    @Bean
+//    CommandLineRunner commandLineRunner(ServiceRepository serviceRepository) {
+//        return args -> {
+//            Service firstService = new Service("first", 10, 20);
+//            Service secondService = new Service("second", 20, 40);
+//            serviceRepository.saveAll(
+//                    List.of(firstService, secondService)
+//            );
+//        };
+//    }
 }

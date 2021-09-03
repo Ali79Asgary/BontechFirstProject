@@ -7,15 +7,6 @@ public class SimpleUser {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-//    @SequenceGenerator(
-//            name = "simple_user_sequence",
-//            sequenceName = "simple_user_sequence",
-//            allocationSize = 1
-//    )
-//    @GeneratedValue(
-//            strategy = GenerationType.SEQUENCE,
-//            generator = "simple_user_sequence"
-//    )
     private Long id;
     private String username;
     private String password;
