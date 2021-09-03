@@ -1,6 +1,7 @@
 package com.example.demo.io.entity;
 
 import javax.persistence.*;
+import java.util.Set;
 
 @Entity
 public class SimpleUser {
@@ -11,6 +12,12 @@ public class SimpleUser {
     private String username;
     private String password;
     private String credit;
+
+    @ManyToMany
+    Set<Service> allowedServices;
+
+    @ManyToMany
+    Set<Service> activeServices;
 
     public SimpleUser() {
     }
